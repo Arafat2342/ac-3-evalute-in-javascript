@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>positive and negative numbers by serial</h1>
+    <button onclick="ascending()">Click here!</button>
+    <p id="numbers"></p>
+    <script>
+       var x = 5,y = 10 ,a = eval("x - y") + "<br>", b = eval("x * y") + "<br>", c = eval("x + y") + "<br>",res =[a , b , c];
+    
+
+       function ascending(){
+
+        res.sort(function(a, b){return a - b});
+
+        document.getElementById("numbers").innerHTML = res;
+
+       }
+       
+    </script>
+</body>
+</html>
